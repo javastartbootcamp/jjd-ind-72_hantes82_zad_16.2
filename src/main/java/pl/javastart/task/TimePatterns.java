@@ -8,7 +8,7 @@ import java.util.*;
 public class TimePatterns {
     public static LocalDateTime parseTimeFormat(String userInput) {
         List<String> formatters = new ArrayList<>();
-        Collections.addAll(formatters, "yyyy-MM-dd HH:mm:ss", "dd.MM.yyyy HH:mm:ss", "2022-10-23");
+        Collections.addAll(formatters, "yyyy-MM-dd HH:mm:ss", "dd.MM.yyyy HH:mm:ss", "yyyy-MM-dd");
         LocalDateTime parsedDateTime = null;
         boolean parsed = false;
         for (String formatter : formatters) {
